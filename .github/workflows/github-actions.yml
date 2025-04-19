@@ -1,7 +1,10 @@
+# .github/workflows/schedule.yml
 name: Github Actions Demo
-on: 
+
+on:
   schedule:
-    - cron: "* * * * *"
+    - cron: '* * * * *'  # Every minute
+  workflow_dispatch:      # Add manual trigger for testing
 
 jobs:
   build:
